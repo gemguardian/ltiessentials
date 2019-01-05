@@ -1,0 +1,17 @@
+Ref: https://docs.moodle.org/dev/PHPUnit
+
+composer install --dev
+
+php admin/tool/phpunit/cli/init.php
+
+vendor/bin/phpunit theme_ltiessential_corerenderer_testcase theme/ltiessential/tests/corerenderer_test.php
+or
+vendor\bin\phpunit theme_ltiessential_corerenderer_testcase theme/ltiessential/tests/corerenderer_test.php
+
+vendor\bin\phpunit theme_ltiessential_toolbox_testcase theme/ltiessential/tests/toolbox_test.php
+or
+vendor\bin\phpunit theme_ltiessential_toolbox_testcase theme/ltiessential/tests/toolbox_test.php
+
+vendor/bin/phpunit --group theme_ltiessential
+or
+vendor\bin\phpunit --group theme_ltiessential

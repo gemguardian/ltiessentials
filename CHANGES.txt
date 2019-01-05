@@ -1,0 +1,23 @@
+New in 3.5.0.4
+==============
+- NEW: Added H5P setting.
+- FIX: Region page top / header error when adding blocks.
+- FIX: NL language strings.
+
+New in 3.5.0.3
+==============
+- FIX: Removed mobile app link in footer.
+
+New in 3.5.0.2
+==============
+- FIX: Set logo height to a maximum of 65px.
+- FIX: Removed navbar.
+
+New in 3.5.0.1
+==============
+- NEW: First version.
+- FIX: Removed analytics.php.
+- FIX: Addressed LTR and RTL with $left.
+- FIX: Addressed changes to logo settings as the 'url' ones no longer exist.
+- FIX: Removed module navigation setting as now in parent theme.
+- FIX: Added privacy, please check!
