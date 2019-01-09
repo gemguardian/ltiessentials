@@ -1,6 +1,6 @@
-The "LTI Essential" Moodle Theme
+The "ltiessentiallerenisleuk" Moodle Theme
 ======================
-LTI Essential is a child theme of Essential.
+ltiessentiallerenisleuk is a child theme of Essential.
 
 You MUST have 'Essential' installed for this child theme to work.  The 'version.php' file contains the correct 'required' dependent
 version of 'Essential'.
@@ -11,9 +11,11 @@ G J Barnard MSc. BSc(Hons)(Sndw). MBCS. CEng. CITP. PGCE.
 Moodle profile | http://moodle.org/user/profile.php?id=442195
 Web profile | http://about.me/gjbarnard
 
+And G. Lesterhuis Lesterhuis Training en Consultancy
+
 Free Software
 =============
-The LTI Essential theme is software under the terms of the GNU GPLv3 License, please see 'COPYING.txt'.
+The ltiessentiallerenisleuk theme is software under the terms of the GNU GPLv3 License, please see 'COPYING.txt'.
 
 It is a child theme within 'Essential' - folder 'ltiessential' can be obtained for free from:
 http://moodle.org/plugins/view.php?plugin=theme_essential
@@ -80,7 +82,7 @@ do so:
     under 'Home -> Site administration -> Development -> Purge all caches'.
 7.  Go back in as an administrator and follow standard the 'plugin' update notification.  If needed, go to
     'Site administration' -> 'Notifications' if this does not happen.
-8.  Switch the theme back to 'LTI Essential' under 'Home -> Administration -> Site administration -> Appearance -> Themes -> Theme selector ->
+8.  Switch the theme back to 'ltiessentiallerenisleuk' under 'Home -> Administration -> Site administration -> Appearance -> Themes -> Theme selector ->
     Default'.
 9.  Put Moodle out of 'Maintenance mode' under 'Home -> Administration -> Site administration -> Server -> Maintenance mode'.
 
@@ -90,9 +92,7 @@ Before reporting an issue, please ensure that you are running the latest version
 that you are operating the required version of Moodle as stated at the top - this is because the theme relies on core
 functionality that is out of its control.
 
-When reporting an issue you can post in the theme's forum on Moodle.org (currently 'moodle.org/mod/forum/view.php?id=46')
-or check the issue list https://github.com/gjb2048/moodle-theme_essential/issues and if the problem does not exist, create an
-issue.
+When reporting an issue you create an issue at https://github.com/gemguardian/ltiessentials/issues
 
 It is essential that you provide as much information as possible, the critical information being the contents of the theme's 
 'version.php' file.  Other version information such as specific Moodle version, theme name and version also helps.  A screen shot

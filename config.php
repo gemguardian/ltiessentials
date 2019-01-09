@@ -15,19 +15,19 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * @package     theme_ltiessential
+ * @package     theme_ltiessentiallerenisleuk
  * @copyright   2019 Gareth J Barnard
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$THEME->name = 'ltiessential';
+$THEME->name = 'ltiessentiallerenisleuk';
 
 $THEME->yuicssmodules = array();
 $THEME->parents = array('essential', 'bootstrapbase');
 
-$THEME->sheets[] = 'ltiessential';
+$THEME->sheets[] = 'ltiessentiallerenisleuk';
 
 $THEME->supportscssoptimisation = false;
 
 $THEME->rendererfactory = 'theme_overridden_renderer_factory';
-$THEME->csspostprocess = 'theme_ltiessential_process_css';
+$THEME->csspostprocess = 'theme_ltiessentiallerenisleuk_process_css';

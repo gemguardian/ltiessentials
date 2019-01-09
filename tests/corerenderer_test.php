@@ -16,7 +16,7 @@
 
 /**
  * @package    theme
- * @subpackage ltiessential
+ * @subpackage ltiessentiallerenisleuk
  * @copyright  &copy; 2017-onwards G J Barnard in respect to modifications of the Bootstrap theme.
  * @author     G J Barnard - gjbarnard at gmail dot com and {@link http://moodle.org/user/profile.php?id=442195}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -24,26 +24,26 @@
 
 /**
  * Core renderer unit tests for the theme.
- * @group theme_ltiessential
+ * @group theme_ltiessentiallerenisleuk
  */
-class theme_ltiessential_corerenderer_testcase extends advanced_testcase {
+class theme_ltiessentiallerenisleuk_corerenderer_testcase extends advanced_testcase {
 
     protected $outputus;
 
     protected function setUp() {
-        set_config('themetextcolour', '#00ff00', 'theme_ltiessential');
+        set_config('themetextcolour', '#00ff00', 'theme_ltiessentiallerenisleuk');
         set_config('logo', '/test_essential.jpg', 'theme_essential');
-        set_config('logo', '/test_ltiessential.jpg', 'theme_ltiessential');
+        set_config('logo', '/test_ltiessentiallerenisleuk.jpg', 'theme_ltiessentiallerenisleuk');
         $this->resetAfterTest(true);
 
         global $PAGE;
-        $this->outputus = $PAGE->get_renderer('theme_ltiessential', 'core');
+        $this->outputus = $PAGE->get_renderer('theme_ltiessentiallerenisleuk', 'core');
         \theme_essential\toolbox::set_core_renderer($this->outputus);
     }
 
     public function test_version() {
         $ourversion = \theme_essential\toolbox::get_setting('version');
-        $coretheme = \theme_config::load('ltiessential');
+        $coretheme = \theme_config::load('ltiessentiallerenisleuk');
 
         $this->assertEquals($coretheme->settings->version, $ourversion);
     }
@@ -54,10 +54,10 @@ class theme_ltiessential_corerenderer_testcase extends advanced_testcase {
         $this->assertEquals('#00ff00', $ourcolour);
     }
 
-    public function test_logo_ltiessential() {
+    public function test_logo_ltiessentiallerenisleuk() {
         $ourlogo = \theme_essential\toolbox::setting_file_url('logo', 'logo');
 
-        $this->assertEquals('//www.example.com/moodle/pluginfile.php/1/theme_ltiessential/logo/1/test_ltiessential.jpg', $ourlogo);
+        $this->assertEquals('//www.example.com/moodle/pluginfile.php/1/theme_ltiessentiallerenisleuk/logo/1/test_ltiessentiallerenisleuk.jpg', $ourlogo);
     }
 
     public function test_logo_essential() {
@@ -72,7 +72,7 @@ class theme_ltiessential_corerenderer_testcase extends advanced_testcase {
         $ouricon = \theme_essential\toolbox::pix_url('essential_button', 'theme');
 
         global $CFG;
-        $this->assertEquals($CFG->wwwroot.'/theme/image.php/_s/ltiessential/theme/1/essential_button',
+        $this->assertEquals($CFG->wwwroot.'/theme/image.php/_s/ltiessentiallerenisleuk/theme/1/essential_button',
             $ouricon->out(false));
     }
 }

@@ -15,13 +15,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * @package     theme_ltiessential
+ * @package     theme_ltiessentiallerenisleuk
  * @copyright   2019 Gareth J Barnard
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-function theme_ltiessential_process_css($css, $theme) {
+function theme_ltiessentiallerenisleuk_process_css($css, $theme) {
     global $PAGE, $CFG;
-    $outputus = $PAGE->get_renderer('theme_ltiessential', 'core');
+    $outputus = $PAGE->get_renderer('theme_ltiessentiallerenisleuk', 'core');
     \theme_essential\toolbox::set_core_renderer($outputus);
 
     if (file_exists("$CFG->dirroot/theme/essential/lib.php")) {
@@ -32,15 +32,15 @@ function theme_ltiessential_process_css($css, $theme) {
     $css = theme_essential_process_css($css, $theme);
 
     // Set custom CSS.
-    $customcss = \theme_essential\toolbox::get_setting('ltiessentialcustomcss');
-    $css = theme_ltiessential_set_customcss($css, $customcss);
+    $customcss = \theme_essential\toolbox::get_setting('ltiessentiallerenisleukcustomcss');
+    $css = theme_ltiessentiallerenisleuk_set_customcss($css, $customcss);
 
     // Finally return processed CSS.
     return $css;
 }
 
-function theme_ltiessential_set_customcss($css, $customcss) {
-    $tag = '[[setting:ltiessentialcustomcss]]';
+function theme_ltiessentiallerenisleuk_set_customcss($css, $customcss) {
+    $tag = '[[setting:ltiessentiallerenisleukcustomcss]]';
     $replacement = $customcss;
     $css = str_replace($tag, $replacement, $css);
     return $css;
@@ -58,10 +58,10 @@ function theme_ltiessential_set_customcss($css, $customcss) {
  * @param array $options.
  * @return bool.
  */
-function theme_ltiessential_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array()) {
+function theme_ltiessentiallerenisleuk_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array()) {
     static $theme;
     if (empty($theme)) {
-        $theme = theme_config::load('ltiessential');
+        $theme = theme_config::load('ltiessentiallerenisleuk');
     }
     if ($context->contextlevel == CONTEXT_SYSTEM) {
         // By default, theme files must be cache-able by both browsers and proxies.  From 'More' theme.

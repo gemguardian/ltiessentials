@@ -15,11 +15,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * @package     theme_ltiessential
+ * @package     theme_ltiessentiallerenisleuk
  * @copyright   2019 Gareth J Barnard
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-namespace theme_ltiessential\output;
+namespace theme_ltiessentiallerenisleuk\output;
 
 use html_writer;
 
@@ -33,7 +33,7 @@ class core_renderer extends \theme_essential\output\core_renderer {
      */
     public function __construct(\moodle_page $page, $target) {
         parent::__construct($page, $target);
-        $this->themeconfig[] = \theme_config::load('ltiessential');  // Initialised by the Essential constructor.
+        $this->themeconfig[] = \theme_config::load('ltiessentiallerenisleuk');  // Initialised by the Essential constructor.
     }
 
     public function get_tile_file($filename) {

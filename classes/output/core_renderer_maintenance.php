@@ -15,11 +15,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * @package     theme_ltiessential
+ * @package     theme_ltiessentiallerenisleuk
  * @copyright   2019 Gareth J Barnard
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-namespace theme_ltiessential\output;
+namespace theme_ltiessentiallerenisleuk\output;
 
 class core_renderer_maintenance extends \theme_essential\output\core_renderer_maintenance {
     /**
@@ -30,6 +30,6 @@ class core_renderer_maintenance extends \theme_essential\output\core_renderer_ma
      */
     public function __construct(\moodle_page $page, $target) {
         parent::__construct($page, $target);
-        $this->themeconfig = array(\theme_config::load('ltiessential'));
+        $this->themeconfig = array(\theme_config::load('ltiessentiallerenisleuk'));
     }
 }

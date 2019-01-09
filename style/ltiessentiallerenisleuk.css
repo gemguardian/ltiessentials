@@ -1,0 +1,24 @@
+/*
+ * @package     theme_ltiessentiallerenisleuk
+ * @copyright   2019 Gareth J Barnard
+ * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+#page-header {
+    background-color: #fff;
+    background-image: none;
+    margin-top: 0;
+}
+
+#page-header,
+#page-header .logo img {
+    max-height: 65px;
+}
+
+#page-header .logo-container {
+    width: auto;
+}
+
+/* Custom CSS Settings
+-------------------------*/
+[[setting:ltiessentiallerenisleukcustomcss]]

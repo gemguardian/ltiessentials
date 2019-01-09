@@ -16,7 +16,7 @@
 
 /**
  * @package    theme
- * @subpackage ltiessential
+ * @subpackage ltiessentiallerenisleuk
  * @copyright  &copy; 2017-onwards G J Barnard in respect to modifications of the Bootstrap theme.
  * @author     G J Barnard - gjbarnard at gmail dot com and {@link http://moodle.org/user/profile.php?id=442195}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -24,18 +24,18 @@
 
 /**
  * Toolbox unit tests for the theme.
- * @group theme_ltiessential
+ * @group theme_ltiessentiallerenisleuk
  */
-class theme_ltiessential_toolbox_testcase extends advanced_testcase {
+class theme_ltiessentiallerenisleuk_toolbox_testcase extends advanced_testcase {
 
     protected $outputus;
 
     protected function setUp() {
-        set_config('theme', 'ltiessential');
+        set_config('theme', 'ltiessentiallerenisleuk');
         $this->resetAfterTest(true);
 
         global $PAGE;
-        $this->outputus = $PAGE->get_renderer('theme_ltiessential', 'core');
+        $this->outputus = $PAGE->get_renderer('theme_ltiessentiallerenisleuk', 'core');
         \theme_essential\toolbox::set_core_renderer($this->outputus);
     }
 
@@ -44,7 +44,7 @@ class theme_ltiessential_toolbox_testcase extends advanced_testcase {
         global $CFG;
         $withoutdirroot = str_replace($CFG->dirroot, '', $thefile);
 
-        $this->assertEquals('/theme/ltiessential/layout/tiles/header.php', $withoutdirroot);
+        $this->assertEquals('/theme/ltiessentiallerenisleuk/layout/tiles/header.php', $withoutdirroot);
     }
 
     public function test_get_tilefile_slideshow() {
@@ -59,8 +59,8 @@ class theme_ltiessential_toolbox_testcase extends advanced_testcase {
         global $PAGE, $CFG, $OUTPUT;
         $themedir = str_replace($CFG->dirroot, '', $PAGE->theme->dir);
 
-        $this->assertEquals('ltiessential', $PAGE->theme->name);
-        $this->assertEquals('/theme/ltiessential', $themedir);
+        $this->assertEquals('ltiessentiallerenisleuk', $PAGE->theme->name);
+        $this->assertEquals('/theme/ltiessentiallerenisleuk', $themedir);
         $this->assertEquals('essential', $PAGE->theme->parents[0]);
     }
 }

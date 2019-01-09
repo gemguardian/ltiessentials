@@ -20,13 +20,15 @@
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die;
+/* Core */
+$string['fontselectdesc'] = 'Kies uit de lijst van beschikbare fonts:<ul><li>\'User fonts\' zijn al geinstalleerde op de gebruikersmachine. Je specificeert alleen de naam. </li><li>\'Google web fonts\' vind je op \'{$a->googlewebfonts}\' en specificeer de naam.</li></ul>Klik op bewaar de wijzigingen om de opties van je keuze te tonen.';
 
-$plugin->version = 2019010203; // YYYYMMDDVV.
-$plugin->maturity = MATURITY_STABLE; // This version's maturity level.
-$plugin->release = '3.5.0.4 (Build: 2019010203)';
-$plugin->requires  = 2018051700.00; // 3.5 (Build: 20180517).
-$plugin->component = 'theme_ltiessentiallerenisleuk';
-$plugin->dependencies = array(
-    'theme_essential'  => 2018051903 // When H5P setting was added.
-);
+// Regions.
+$string['region-side-post'] = 'Rechts';
+$string['region-side-pre'] = 'Links';
+$string['region-header'] = 'Kop';
+$string['region-page-top'] = 'Pagina boven';
+$string['region-footer-left'] = 'Footer (Links)';
+$string['region-footer-middle'] = 'Footer (Midden)';
+$string['region-footer-right'] = 'Footer (Rechts)';
+$string['region-hidden-dock'] = 'Verberg voor gebruikers'; 

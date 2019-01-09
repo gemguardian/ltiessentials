@@ -4,14 +4,14 @@ composer install --dev
 
 php admin/tool/phpunit/cli/init.php
 
-vendor/bin/phpunit theme_ltiessential_corerenderer_testcase theme/ltiessential/tests/corerenderer_test.php
+vendor/bin/phpunit theme_ltiessentiallerenisleuklerenisleuk_corerenderer_testcase theme/ltiessentiallerenisleuk/tests/corerenderer_test.php
 or
-vendor\bin\phpunit theme_ltiessential_corerenderer_testcase theme/ltiessential/tests/corerenderer_test.php
+vendor\bin\phpunit theme_ltiessentiallerenisleuk_corerenderer_testcase theme/ltiessentiallerenisleuk/tests/corerenderer_test.php
 
-vendor\bin\phpunit theme_ltiessential_toolbox_testcase theme/ltiessential/tests/toolbox_test.php
+vendor\bin\phpunit theme_ltiessentiallerenisleuk_toolbox_testcase theme/ltiessentiallerenisleuk/tests/toolbox_test.php
 or
-vendor\bin\phpunit theme_ltiessential_toolbox_testcase theme/ltiessential/tests/toolbox_test.php
+vendor\bin\phpunit theme_ltiessentiallerenisleuk_toolbox_testcase theme/ltiessentiallerenisleuk/tests/toolbox_test.php
 
-vendor/bin/phpunit --group theme_ltiessential
+vendor/bin/phpunit --group theme_ltiessentiallerenisleuk
 or
-vendor\bin\phpunit --group theme_ltiessential
+vendor\bin\phpunit --group theme_ltiessentiallerenisleuk
